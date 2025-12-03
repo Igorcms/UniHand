@@ -162,9 +162,9 @@ bash run_unihand.sh
 
 * After training, you can evaluate the trained model by setting `evaluate` to `true` in `unihand/configs/traineval.yaml` and **run the same command**. You can set `gap` to `1` for better results.
 
-* You can resume training from or evaluate a checkpoint by setting `resume` in `unihand/configs/traineval.yaml`.
+* You can resume training from or evaluate a checkpoint by setting `resume` in `unihand/configs/traineval.yaml`. If you evaluate your model trained from scratch, set `use_os_weights` to `false`.
 
-* We provide the pretrained model of Uni-Hand [here](https://pan.sjtu.edu.cn/web/share/4cfa8b4fe54b4187c393135cb8562fd7). Feel free to test it!
+* Otherwise, We provide the pretrained model of Uni-Hand [here](https://pan.sjtu.edu.cn/web/share/4cfa8b4fe54b4187c393135cb8562fd7). Please set `use_os_weights` to `true` and test it!
 
 * Uni-Hand is robust to background variations thanks to the use of depth information.
 
