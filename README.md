@@ -201,9 +201,10 @@ python viz_predicted_trajs.py
 
 * [Human videos with annotations [pick-and-place]](https://pan.sjtu.edu.cn/web/share/8b4eff7f7b20ce1d8630b6ee70d357e2)
 * [Human videos with annotations [open-door]]()
-* We have put the [train](https://pan.sjtu.edu.cn/web/share/3ae909c9dfb865f04b11973dedf766e0)/[test](https://pan.sjtu.edu.cn/web/share/e0d87213cca8db3f5c398e3098780016) splits and [contact/separation labels](https://pan.sjtu.edu.cn/web/share/9421c56ce687119ad67c14af6fc58aa6) under the `unihand/data_utils` folder. 
 * [Pretrained model [pick-and-place]](https://pan.sjtu.edu.cn/web/share/4cfa8b4fe54b4187c393135cb8562fd7)
 * [Pretrained model [open-door]]()
+* We have put the [train](https://pan.sjtu.edu.cn/web/share/3ae909c9dfb865f04b11973dedf766e0)/[test](https://pan.sjtu.edu.cn/web/share/e0d87213cca8db3f5c398e3098780016) splits and [contact/separation labels](https://pan.sjtu.edu.cn/web/share/9421c56ce687119ad67c14af6fc58aa6) of the pick-and-place task under the `unihand/data_utils` folder. For the open-door task, please refer to this [link]().
+
 
 </details>
 
@@ -214,11 +215,12 @@ We have demonstrated the deployment of Uni-Hand on real robots. Please refer to 
 
 <div style="display:flex; justify-content:space-between; width:100%;">
   <img src="./docs/franka_exp_pnp.gif" style="height:200px; object-fit:cover;">
-  <img src="./docs/aloha_exp.gif" style="height:200px; object-fit:cover;">
+  <img src="./docs/aloha_exp1.gif" style="height:200px; object-fit:cover;">
 </div>
 
-<div style="display:flex; justify-content:center; width:100%; margin-top:5px;">
-  <img src="./docs/franka_exp_open.gif" style="width:100%; height:200px; object-fit:cover;">
+<div style="display:flex; justify-content:space-between; width:100%;">
+  <img src="./docs/franka_exp_open.gif" style="height:200px; object-fit:cover;">
+  <img src="./docs/aloha_exp2.gif" style="height:200px; object-fit:cover;">
 </div>
 
 
