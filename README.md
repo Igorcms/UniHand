@@ -9,7 +9,7 @@
 
 **Human Videos are All You Need!** 
 
-** In this repository, we demonstrate how to train Uni-Hand using only human demonstration videos and leverage the trained model to generate end-effector trajectories for robotic manipulation.** To evaluate our method on other public datasets (e.g., EgoPAT3D), please refer to our [preliminary work](https://github.com/IRMVLab/MMTwin).
+**In this repository, we demonstrate how to train Uni-Hand using only human demonstration videos and leverage the trained model to generate end-effector trajectories for robotic manipulation.** To evaluate our method on other public datasets (e.g., EgoPAT3D), please refer to our [preliminary work](https://github.com/IRMVLab/MMTwin).
 
 <img src="./docs/transfer_paradigm_trimmed.gif" width="100%">
 
