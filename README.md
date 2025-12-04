@@ -36,9 +36,9 @@ pip install -r requirements.txt
 </details>
 
 <details>
-<summary>:wrench: Clone HaMeR and DINOv2 for data preprocessing. (optional) <strong>[Click to expand]</strong></summary>
+<summary>:wrench: Clone [HaMeR](https://github.com/geopavlakos/hamer)/[SAM 3D Body](https://github.com/facebookresearch/sam-3d-body) and DINOv2 for data preprocessing. (optional) <strong>[Click to expand]</strong></summary>
 
-Since we use HaMeR for hand motion extraction and DINOv2 for vision feature extraction, we need to clone them in this project.
+Since we use HaMeR for hand motion extraction and DINOv2 for vision feature extraction, we need to clone them in this project. We also recommend using SAM 3D Body, and its related tutorial for Uni-Hand is coming soon.
 
 ```
 git clone https://github.com/geopavlakos/hamer.git
